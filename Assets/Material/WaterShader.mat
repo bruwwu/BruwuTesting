@@ -49,7 +49,7 @@ Material:
     - _Absorption: 1
     - _Depht: 1
     - _Depth: 0.603
-    - _Displacement: 0.053
+    - _Displacement: 0.22
     - _NormalStrengt: 1
     - _QueueControl: 0
     - _QueueOffset: 0

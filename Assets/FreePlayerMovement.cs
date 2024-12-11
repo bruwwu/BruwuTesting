@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class FreePlayerMovement : MonoBehaviour
 {
-    CharacterController characterController;
+    Rigidbody rb;
     public float MoveSpeed;
     // Start is called before the first frame update
     void Start()
     {
-        characterController = GetComponent<CharacterController>();
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -17,6 +17,6 @@ public class FreePlayerMovement : MonoBehaviour
     {
         Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0,Input.GetAxis("Vertical"));
         Vector3 moveVector = transform.TransformDirection(move) * MoveSpeed;
-        characterController.Move(moveVector * Time.deltaTime * MoveSpeed);
+        rb.velocity = moveVector * Time.deltaTime * MoveSpeed;
     }
 }
