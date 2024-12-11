@@ -26,6 +26,6 @@ public class WaterSim : MonoBehaviour
     }
     public float GetWaveHeight(float _x)
     {
-        return amplitude * Mathf.Sin((_x / lenght) + offset);
+        return amplitude * Mathf.Sin(_x / lenght + offset);
     }
 }
