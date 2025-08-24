@@ -1,0 +1,430 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad7f7bc6a230f7241b47c9b85bafb995, type: 3}
+  m_Name: default_states
+  m_EditorClassIdentifier: 
+  presetStates:
+  - id: Idle
+    frames:
+    - id: Idle_frame_0
+      frame:
+        keyframeName: Idle_frame_-1_keyframe
+        allTransformData:
+        - transformName: hips
+          pos: {x: 0, y: 0, z: 0}
+          rot: {x: 0, y: 0, z: 0}
+        - transformName: chest
+          pos: {x: 0, y: 0, z: 0}
+          rot: {x: 0, y: -2.220446e-16, z: 0}
+        - transformName: left_foot
+          pos: {x: 0, y: 0, z: 0}
+          rot: {x: 0, y: 0, z: 0}
+        - transformName: right_foot
+          pos: {x: 0, y: 0, z: 0}
+          rot: {x: -0.000030517578, y: 0.00000023841858, z: 0}
+        - transformName: left_hand
+          pos: {x: 0.32245818, y: -0.3857361, z: 0}
+          rot: {x: -77.61631, y: 72.33556, z: 66.13822}
+        - transformName: right_hand
+          pos: {x: -0.33748186, y: -0.38473493, z: 0}
+          rot: {x: -75.40087, y: 29.039764, z: 39.805878}
+        - transformName: head
+          pos: {x: 0, y: 0, z: 0}
+          rot: {x: 0, y: 0, z: 0}
+        transformDataByName:
+          m_keys:
+          - hips
+          - chest
+          - left_foot
+          - right_foot
+          - left_hand
+          - right_hand
+          - head
+          m_values:
+          - transformName: hips
+            pos: {x: 0, y: 0, z: 0}
+            rot: {x: 0, y: 0, z: 0}
+          - transformName: chest
+            pos: {x: 0, y: 0, z: 0}
+            rot: {x: 0, y: -2.220446e-16, z: 0}
+          - transformName: left_foot
+            pos: {x: 0, y: 0, z: 0}
+            rot: {x: 0, y: 0, z: 0}
+          - transformName: right_foot
+            pos: {x: 0, y: 0, z: 0}
+            rot: {x: -0.000030517578, y: 0.00000023841858, z: 0}
+          - transformName: left_hand
+            pos: {x: 0.32245818, y: -0.3857361, z: 0}
+            rot: {x: -77.61631, y: 72.33556, z: 66.13822}
+          - transformName: right_hand
+            pos: {x: -0.33748186, y: -0.38473493, z: 0}
+            rot: {x: -75.40087, y: 29.039764, z: 39.805878}
+          - transformName: head
+            pos: {x: 0, y: 0, z: 0}
+            rot: {x: 0, y: 0, z: 0}
+      curve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 1
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 1
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      speed: 6
+    isLooping: 0
+    isMirrored: 0
+    stateMachineState: {fileID: 0}
+  - id: Run
+    frames:
+    - id: Run_frame_0
+      frame:
+        keyframeName: Run_frame_2_keyframe
+        allTransformData:
+        - transformName: hips
+          pos: {x: 0, y: 0.096258104, z: 0}
+          rot: {x: 0, y: 0, z: 0}
+        - transformName: chest
+          pos: {x: -0.06139732, y: 0.09200001, z: 0}
+          rot: {x: 0, y: -1.110223e-15, z: 3.469447e-18}
+        - transformName: left_foot
+          pos: {x: -0.09179905, y: 0.74107325, z: -0.4950695}
+          rot: {x: -230.90384, y: -349.9233, z: 17.873291}
+        - transformName: right_foot
+          pos: {x: 0, y: 0.39907366, z: 0.6369295}
+          rot: {x: -20.305359, y: 355.44507, z: 5.0714264}
+        - transformName: left_hand
+          pos: {x: 0.32245818, y: 0.0302639, z: 0.28018436}
+          rot: {x: 266.40417, y: 107.2633, z: -9.865768}
+        - transformName: right_hand
+          pos: {x: -0.33748186, y: -0.21173489, z: -0.14885911}
+          rot: {x: -79.610695, y: 21.030304, z: 26.971771}
+        - transformName: head
+          pos: {x: -0.09139732, y: 0.09200001, z: 0}
+          rot: {x: 0, y: 0, z: 0}
+        transformDataByName:
+          m_keys:
+          - hips
+          - chest
+          - left_foot
+          - right_foot
+          - left_hand
+          - right_hand
+          - head
+          m_values:
+          - transformName: hips
+            pos: {x: 0, y: 0.096258104, z: 0}
+            rot: {x: 0, y: 0, z: 0}
+          - transformName: chest
+            pos: {x: -0.06139732, y: 0.09200001, z: 0}
+            rot: {x: 0, y: -1.110223e-15, z: 3.469447e-18}
+          - transformName: left_foot
+            pos: {x: -0.09179905, y: 0.74107325, z: -0.4950695}
+            rot: {x: -230.90384, y: -349.9233, z: 17.873291}
+          - transformName: right_foot
+            pos: {x: 0, y: 0.39907366, z: 0.6369295}
+            rot: {x: -20.305359, y: 355.44507, z: 5.0714264}
+          - transformName: left_hand
+            pos: {x: 0.32245818, y: 0.0302639, z: 0.28018436}
+            rot: {x: 266.40417, y: 107.2633, z: -9.865768}
+          - transformName: right_hand
+            pos: {x: -0.33748186, y: -0.21173489, z: -0.14885911}
+            rot: {x: -79.610695, y: 21.030304, z: 26.971771}
+          - transformName: head
+            pos: {x: -0.09139732, y: 0.09200001, z: 0}
+            rot: {x: 0, y: 0, z: 0}
+      curve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 1
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 1
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      speed: 6
+    - id: Run_frame_1
+      frame:
+        keyframeName: Run_frame_0_keyframe
+        allTransformData:
+        - transformName: hips
+          pos: {x: 0, y: 0.004258156, z: 0}
+          rot: {x: 0, y: 0, z: 0}
+        - transformName: chest
+          pos: {x: 0, y: 0, z: 0}
+          rot: {x: 0, y: -6.661338e-16, z: -1.7347235e-18}
+        - transformName: left_foot
+          pos: {x: 0, y: 0.021443889, z: 0.026930477}
+          rot: {x: 0.86642456, y: -0.08203125, z: 0.10681152}
+        - transformName: right_foot
+          pos: {x: 0, y: 0.021444306, z: -0.008070476}
+          rot: {x: 3.0976868, y: 0.2806394, z: -0.36398315}
+        - transformName: left_hand
+          pos: {x: 0.39323974, y: -0.37473613, z: 0.011184353}
+          rot: {x: -69.886795, y: 77.91266, z: 42.894936}
+        - transformName: right_hand
+          pos: {x: -0.33748186, y: -0.2947349, z: 0.16914089}
+          rot: {x: 266.05243, y: 39.997223, z: 96.02678}
+        - transformName: head
+          pos: {x: 0, y: 0, z: 0}
+          rot: {x: 0, y: 0, z: 0}
+        transformDataByName:
+          m_keys:
+          - hips
+          - chest
+          - left_foot
+          - right_foot
+          - left_hand
+          - right_hand
+          - head
+          m_values:
+          - transformName: hips
+            pos: {x: 0, y: 0.004258156, z: 0}
+            rot: {x: 0, y: 0, z: 0}
+          - transformName: chest
+            pos: {x: 0, y: 0, z: 0}
+            rot: {x: 0, y: -6.661338e-16, z: -1.7347235e-18}
+          - transformName: left_foot
+            pos: {x: 0, y: 0.021443889, z: 0.026930477}
+            rot: {x: 0.86642456, y: -0.08203125, z: 0.10681152}
+          - transformName: right_foot
+            pos: {x: 0, y: 0.021444306, z: -0.008070476}
+            rot: {x: 3.0976868, y: 0.2806394, z: -0.36398315}
+          - transformName: left_hand
+            pos: {x: 0.39323974, y: -0.37473613, z: 0.011184353}
+            rot: {x: -69.886795, y: 77.91266, z: 42.894936}
+          - transformName: right_hand
+            pos: {x: -0.33748186, y: -0.2947349, z: 0.16914089}
+            rot: {x: 266.05243, y: 39.997223, z: 96.02678}
+          - transformName: head
+            pos: {x: 0, y: 0, z: 0}
+            rot: {x: 0, y: 0, z: 0}
+      curve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 1
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 1
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      speed: 6
+    - id: Run_frame_2
+      frame:
+        keyframeName: Run_frame_1_keyframe
+        allTransformData:
+        - transformName: hips
+          pos: {x: 0, y: 0.096258104, z: 0}
+          rot: {x: 0, y: 0, z: 0}
+        - transformName: chest
+          pos: {x: 0.08460268, y: 0.09200001, z: 0}
+          rot: {x: 0, y: -1.110223e-15, z: 3.469447e-18}
+        - transformName: left_foot
+          pos: {x: 0, y: 0.37307325, z: 0.56393045}
+          rot: {x: 0, y: 0, z: 0}
+        - transformName: right_foot
+          pos: {x: 0, y: 0.58407366, z: -0.6070705}
+          rot: {x: -273.49323, y: 1.116638, z: -5.3610687}
+        - transformName: left_hand
+          pos: {x: 0.36245817, y: -0.18273616, z: -0.18381564}
+          rot: {x: 269.43042, y: 63.923874, z: 62.73536}
+        - transformName: right_hand
+          pos: {x: -0.33748186, y: 0.001502037, z: 0.28357732}
+          rot: {x: -62.499947, y: 44.455597, z: 137.68431}
+        - transformName: head
+          pos: {x: 0.05060268, y: 0.09200001, z: 0}
+          rot: {x: 0, y: 0, z: 0}
+        transformDataByName:
+          m_keys:
+          - hips
+          - chest
+          - left_foot
+          - right_foot
+          - left_hand
+          - right_hand
+          - head
+          m_values:
+          - transformName: hips
+            pos: {x: 0, y: 0.096258104, z: 0}
+            rot: {x: 0, y: 0, z: 0}
+          - transformName: chest
+            pos: {x: 0.08460268, y: 0.09200001, z: 0}
+            rot: {x: 0, y: -1.110223e-15, z: 3.469447e-18}
+          - transformName: left_foot
+            pos: {x: 0, y: 0.37307325, z: 0.56393045}
+            rot: {x: 0, y: 0, z: 0}
+          - transformName: right_foot
+            pos: {x: 0, y: 0.58407366, z: -0.6070705}
+            rot: {x: -273.49323, y: 1.116638, z: -5.3610687}
+          - transformName: left_hand
+            pos: {x: 0.36245817, y: -0.18273616, z: -0.18381564}
+            rot: {x: 269.43042, y: 63.923874, z: 62.73536}
+          - transformName: right_hand
+            pos: {x: -0.33748186, y: 0.001502037, z: 0.28357732}
+            rot: {x: -62.499947, y: 44.455597, z: 137.68431}
+          - transformName: head
+            pos: {x: 0.05060268, y: 0.09200001, z: 0}
+            rot: {x: 0, y: 0, z: 0}
+      curve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 1
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 1
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      speed: 6
+    - id: Run_frame_3
+      frame:
+        keyframeName: Run_frame_2_keyframe
+        allTransformData:
+        - transformName: hips
+          pos: {x: 0, y: 0.004258156, z: 0}
+          rot: {x: 0, y: 0, z: 0}
+        - transformName: chest
+          pos: {x: 0, y: 0, z: 0}
+          rot: {x: 0, y: -8.881784e-16, z: -1.7347235e-18}
+        - transformName: left_foot
+          pos: {x: 0, y: 0.0054438934, z: 0.026930477}
+          rot: {x: 0.86642456, y: -0.08203125, z: 0.10681152}
+        - transformName: right_foot
+          pos: {x: 0, y: 0.0054443106, z: -0.008070476}
+          rot: {x: 3.0976868, y: 0.2806394, z: -0.36398315}
+        - transformName: left_hand
+          pos: {x: 0.35023975, y: -0.3087361, z: 0.15818435}
+          rot: {x: 262.9171, y: 70.887184, z: 14.802269}
+        - transformName: right_hand
+          pos: {x: -0.33748186, y: -0.3554979, z: -0.025422662}
+          rot: {x: -81.05934, y: 21.049469, z: 58.831787}
+        - transformName: head
+          pos: {x: 0, y: 0, z: 0}
+          rot: {x: 0, y: 0, z: 0}
+        transformDataByName:
+          m_keys:
+          - hips
+          - chest
+          - left_foot
+          - right_foot
+          - left_hand
+          - right_hand
+          - head
+          m_values:
+          - transformName: hips
+            pos: {x: 0, y: 0.004258156, z: 0}
+            rot: {x: 0, y: 0, z: 0}
+          - transformName: chest
+            pos: {x: 0, y: 0, z: 0}
+            rot: {x: 0, y: -8.881784e-16, z: -1.7347235e-18}
+          - transformName: left_foot
+            pos: {x: 0, y: 0.0054438934, z: 0.026930477}
+            rot: {x: 0.86642456, y: -0.08203125, z: 0.10681152}
+          - transformName: right_foot
+            pos: {x: 0, y: 0.0054443106, z: -0.008070476}
+            rot: {x: 3.0976868, y: 0.2806394, z: -0.36398315}
+          - transformName: left_hand
+            pos: {x: 0.35023975, y: -0.3087361, z: 0.15818435}
+            rot: {x: 262.9171, y: 70.887184, z: 14.802269}
+          - transformName: right_hand
+            pos: {x: -0.33748186, y: -0.3554979, z: -0.025422662}
+            rot: {x: -81.05934, y: 21.049469, z: 58.831787}
+          - transformName: head
+            pos: {x: 0, y: 0, z: 0}
+            rot: {x: 0, y: 0, z: 0}
+      curve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 1
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 1
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      speed: 6
+    isLooping: 0
+    isMirrored: 0
+    stateMachineState: {fileID: 0}
