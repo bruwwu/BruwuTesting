@@ -12,7 +12,7 @@ public class Health : MonoBehaviour
     public int health = 4500;
     public int maxHealth = 4500;
     public bool isDead = false;
-    [SerializeField] private BloodDOT bloodDOT;
+    [SerializeField] private BurstAbilities burstAbilities;
 
     //Tipos de daño
     public enum damageType { bleed, poision, generic }
@@ -40,7 +40,7 @@ public class Health : MonoBehaviour
     {
         if (isDead) return;
         
-        bloodDOT = FindAnyObjectByType<BloodDOT>();
+        burstAbilities = FindAnyObjectByType<BurstAbilities>();
         int finalDamage = damage;
 
         //Aplicar modificadores de daño según el tipo
@@ -57,9 +57,9 @@ public class Health : MonoBehaviour
                 break;
         }
             
-        if (bloodDOT && bloodDOT.isMarked)
+        if (burstAbilities && burstAbilities.isMarked)
         {
-            finalDamage = Mathf.RoundToInt(finalDamage * bloodDOT.damageAmplification);
+            finalDamage = Mathf.RoundToInt(finalDamage * burstAbilities.damageAmplification);
             Debug.Log($"Marked! Base damage: {damage}, Type modified: {finalDamage}");
         }
         
