@@ -17,6 +17,6 @@ public class FreePlayerMovement : MonoBehaviour
     {
         Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0,Input.GetAxis("Vertical"));
         Vector3 moveVector = transform.TransformDirection(move) * MoveSpeed;
-        rb.velocity = moveVector * Time.deltaTime * MoveSpeed;
+        rb.linearVelocity = moveVector * Time.deltaTime * MoveSpeed;
     }
 }
